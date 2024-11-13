@@ -1,1 +1,49 @@
+# Lista para almacenar el historial de cálculos
+historial = []
+
+def calcular_iva(nombre_cliente):
+    # Solicitar monto al usuario
+    monto = float(input("Introduce el precio sin IVA (€): "))
+    tasa_iva = float(input("Introduce el porcentaje de IVA (%): "))
+    
+    # Calcular IVA y total con IVA
+    iva = monto * (tasa_iva / 100)
+    total_con_iva = monto + iva
+    
+    # Guardar el cálculo en el historial
+    historial.append((nombre_cliente, monto, tasa_iva, iva, total_con_iva))
+    
+    # Mostrar resultados
+    print("\nResultados:")
+    print(f"Precio sin IVA: {monto:.2f} €")
+    print(f"Porcentaje de IVA: {tasa_iva}%")
+    print(f"IVA: {iva:.2f} €")
+    print(f"Precio con IVA: {total_con_iva:.2f} €\n")
+
+def mostrar_historial():
+    print("\nHistorial de cálculos:")
+    if historial:
+        for cliente, monto, tasa_iva, iva, total in historial:
+            print(f"{cliente} calculó {monto} € con IVA del {tasa_iva}%: Total con IVA: {total:.2f} €")
+    else:
+        print("No hay cálculos en el historial.\n")
+
+# Programa principal
+while True:
+    # Solicitar el nombre del cliente
+    nombre_cliente = input("Introduce tu nombre: ")
+    
+    # Realizar cálculo de IVA para el usuario ingresado
+    calcular_iva(nombre_cliente)
+    
+    # Preguntar si el usuario quiere ver el historial
+    opcion = input("¿Quieres ver el historial? (s/n): ").strip().lower()
+    if opcion == "s":
+        mostrar_historial()
+    
+    # Preguntar si desea cambiar de usuario o finalizar el programa
+    continuar = input("¿Quieres cambiar de usuario o finalizar? (s/f): ").strip().lower()
+    if continuar == "f":
+        print("Programa finalizado.")
+        break
 
