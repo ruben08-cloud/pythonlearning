@@ -37,8 +37,8 @@ while True:
     calcular_iva(nombre_cliente)
     
     # Preguntar si el usuario quiere ver el historial
-    opcion = input("¿Quieres ver el historial? (s/n): ").strip().lower()
-    if opcion == "s":
+    opcion = input("¿Quieres ver el historial? (escribe 'si', 'historial' o 'ver historial' para verlo): ").strip().lower()
+    if opcion in ["si", "historial", "ver historial"]:
         mostrar_historial()
     
     # Preguntar si desea cambiar de usuario o finalizar el programa
@@ -46,4 +46,3 @@ while True:
     if continuar == "f":
         print("Programa finalizado.")
         break
-
