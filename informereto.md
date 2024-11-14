@@ -14,7 +14,7 @@ Este programa de cálculo de IVA permite a los usuarios ingresar el precio de un
 ### Retos
 - **Comprensión de Requisitos**: Uno de los primeros desafíos fue interpretar correctamente las necesidades del cliente y las funcionalidades específicas del programa.
 - **Modularidad y Simplicidad**: Mantener el programa lo más simple posible, sin perder de vista la funcionalidad, fue crucial. Encontrar el equilibrio adecuado entre simplicidad y funcionalidad también representó un reto.
-- Límite de tiempo: 1 Hora de tiempo de producción para crear la actividad.
+**- Límite de tiempo:** 1 Hora de tiempo de producción para desarrollar la solución que pide el cliente.
 
 ### Mejoras Implementadas
 - **Opciones Simplificadas para el Usuario**: Al permitir que el usuario vea el historial mediante comandos claros (`si`, `historial` o `ver historial`), el programa se vuelve más accesible y fácil de usar.
