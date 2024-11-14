@@ -14,7 +14,7 @@ Este programa de cálculo de IVA permite a los usuarios ingresar el precio de un
 ### Retos
 - **Comprensión de Requisitos**: Uno de los primeros desafíos fue interpretar correctamente las necesidades del cliente y las funcionalidades específicas del programa.
 - **Modularidad y Simplicidad**: Mantener el programa lo más simple posible, sin perder de vista la funcionalidad, fue crucial. Encontrar el equilibrio adecuado entre simplicidad y funcionalidad también representó un reto.
-- **Bucle Continuo vs. Estructura Condicional**: Usar `while` para crear un flujo continuo en lugar de otras estructuras condicionales, como `for`, presentó un debate en el equipo. Optamos por `while` para que el programa sea más intuitivo y adaptable a futuros cambios.
+- Límite de tiempo: 1 Hora de tiempo de producción para crear la actividad.
 
 ### Mejoras Implementadas
 - **Opciones Simplificadas para el Usuario**: Al permitir que el usuario vea el historial mediante comandos claros (`si`, `historial` o `ver historial`), el programa se vuelve más accesible y fácil de usar.
