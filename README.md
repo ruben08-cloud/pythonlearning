@@ -1,2 +1,2 @@
 # pythonlearning
-Utiliza el repositorio para aprender conceptos de python.
+Mirar ambos archivos informereto.md y retoIVA
